@@ -9,18 +9,43 @@
   <body>
     <header class="page-header">
       <div class="page-header__wrapper">
-        <a class=" page-header__logo logo  logo__link ">
-          <img class="page-header__logo-image logo__img" src="img/logo-pink-blue-mobile.svg" width="96" height="15" alt="логотип сервиса Пинк">
-        </a>
+        <div class="page-header__logo-toggle">
+          <a class="page-header__logo logo  logo__link ">
+            <img class="page-header__logo-image logo__img" src="img/logo-pink-white-mobile.svg" width="96" height="15" alt="логотип сервиса Пинк">
+          </a>
+          <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
+            <svg version="1.0"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50" height="24" viewBox="0 0 49.945 24.007" enable-background="new 0 0 49.945 24.007" xml:space="preserve">
+              <g>
+                <g>
+                  <g>
+                    <path  fill="#FFFFFF" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
+                  </g>
+                  <g>
+                    <path fill="#FFFFFF" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </button>
+        </div>
+
         <nav class="main-nav menu">
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
+
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
-              <li class="site-list__item">Главная</li>
-              <li class="site-list__item">Фотографии</li>
-              <li class="site-list__item">Конкурс</li>
-              <li class="site-list__item">Html Academy</li>
-            <ul>
+              <li class="site-list__item">
+                <a>Главная</a>
+              </li>
+              <li class="site-list__item">
+                <a href="photo.html">Фотографии</a>
+              </li>
+              <li class="site-list__item">
+                <a href="form.html">Конкурс</a>
+              </li>
+              <li class="site-list__item">
+                <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+              </li>
+            </ul>
           </div>
         </nav>
       </div>
@@ -30,43 +55,54 @@
       <div class="page-main__wrapper">
         <h1 class="visually-hidden">Приложение Пинк</h1>
         <section class="presentation">
-          <h2 class="presentation__title">Взгляните на жизнь иначе!</h2>
-          <a class="presentation__link button" href="#">Скачать приложение</a>
-          <div class="presentation__links icon-links">
-            <a class="icon-links__item icon-links__item--apple" href="#">Скачать для ios</a>
-            <a class="icon-links__item icon-links__item--android" href="#">Скачать для android</a>
-            <a class="icon-links__item icon-links__item--windows" href="#">Скачать для windows</a>
+          <div class="presentation__wrapper">
+            <h2 class="presentation__title">Взгляните <br> на жизнь <br>иначе!</h2>
+            <div class="presentation__link-wrapper">
+              <a class="presentation__link button" href="#">Скачать приложение</a>
+              <ul class="presentation__links icon-links">
+                <li class="icon__item icon__item--apple">
+                  <a href="#">Скачать для ios</a>
+                </li>
+                <li class="icon__item icon__item--android">
+                  <a href="#">Скачать для android</a>
+                </li>
+                <li class="icon__item icon__item--windows">
+                  <a href="#">Скачать для windows</a>
+                </li>
+              </ul>
+            </div>
+            <p class="presentation__text">
+              Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+            </p>
           </div>
-          <p class="presentation__text">
-            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-          </p>
         </section>
         <section class="features">
-          <h2 class="visually-hidden">Преимущества</h2>
-          <p class="features__text">Устали от серости мегаполиса?</p>
-          <p class="features__text">Нам есть, что вам предложить!</p>
-          <ul class="features__list">
-            <li class="features__item">
-              <p class="features__item--feature">Поднимает настроение!</p>
-              <p class="features__item--description">
-                Приложение позволит вам победить
-                осеннюю хандру и депрессию буквально в несколько кликов
-              </p>
-            </li>
-            <li class="features__item">
-              <p class="features__item--feature">Меняет мир вокруг</p>
-              <p class="features__item--description">
-                Сделайте снимок и украсьте его смайликом или текстовой подписью,
-                 чтобы усилить эффект
-              </p>
-            </li>
-            <li class="features__item">
-              <p class="features__item--feature">Заводит новых друзей</p>
-              <p class="features__item--description">
-                Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
-              </p>
-            </li>
-          </ul>
+          <div class="features__wrapper">
+            <h2 class="visually-hidden">Преимущества</h2>
+            <p class="features__text">Устали от серости мегаполиса?</p>
+            <p class="features__text">Нам есть, что вам предложить!</p>
+            <ul class="features__list">
+              <li class="features__item">
+                <p class="features__item-feature">Поднимает настроение</p>
+                <p class="features__item-description">
+                  Приложение позволит вам победить
+                  осеннюю хандру и депрессию буквально в несколько кликов
+                </p>
+              </li>
+              <li class="features__item">
+                <p class="features__item-feature">Меняет мир вокруг</p>
+                <p class="features__item-description">
+                  Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+                </p>
+              </li>
+              <li class="features__item">
+                <p class="features__item-feature">Заводит новых друзей</p>
+                <p class="features__item-description">
+                  Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+                </p>
+              </li>
+            </ul>
+          </div>
         </section>
         <section class="review">
           <h2 class="visually-hidden">Отзывы</h2>
@@ -74,10 +110,7 @@
             <li class="review-slider__item review-slider__item--active">
               <p class="review-slider__item-name">Николай Петров</p>
               <p class="review-slider__item-info"></p>
-              <p class="review-slider__item-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
-                 привычные серые вещи!
-                 А еще я познакомился со своей будущей женой в комментариях
-                 к выложенной фотографии!»</p>
+              <p class="review-slider__item-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </li>
             <li class="review-slider__item">
               <p class="review-slider__item-name"></p>
@@ -112,21 +145,17 @@
               <p class="contact-us__text-bold">
                 Звоните:
               </p>
-              <a class="contact-us__phone" href="tel:+78125556666">
-                 +7 (812) 555-66-66
-              </a>
+              <a class="contact-us__phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
             </li>
             <li class="contact-us__item">
               <p class="contact-us__text-bold">
                 Пишите:
               </p>
-              <a class="contact-us__email" href="mailto:mail@htmlacademy.ru">
-                 mail@htmlacademy.ru
-              </a>
+              <a class="contact-us__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </li>
           </ul>
           <div class="map">
-            <iframe src="https://yandex.ru/map-widget/v1/-/CGeoJF2t" width="320" height="205" frameborder="0" allowfullscreen="true"></iframe>
+            <iframe src="https://yandex.ru/map-widget/v1/-/CGeoJF2t" width="300" height="205"></iframe>
           </div>
         </section>
 
