@@ -1,7 +1,8 @@
 .features {
   width: 100%;
 
-  background: linear-gradient(175deg, #ffffff 255px, #f2f2f2 255px);
+  background-color: @cream;
+  background-image: linear-gradient(175deg, #ffffff 265px, #f2f2f2 265px);
 }
 
 .features__wrapper {
@@ -9,7 +10,7 @@
   flex-direction: column;
   align-items: center;
 
-  width: 320px;
+  width: 88%;
   margin: 0 auto;
 }
 
@@ -23,6 +24,10 @@
   line-height: 30px;
   font-weight: 300;
   text-align: center;
+
+  &:last-of-type {
+    margin-bottom: 120px;
+  }
 }
 
 .features__list {
@@ -30,4 +35,232 @@
 
   display: flex;
   flex-direction: column;
+  align-items: center;
+
+  max-width: 320px;
+  padding-bottom: 280px;
+
+
+  background-image: url("../img/iphone-screen-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: bottom -35px center;
+
+  br {
+    display: none;
+  }
+}
+
+.features__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 0 20px;
+  padding-bottom: 40px;
+}
+
+.features__item-feature {
+  margin: 0;
+  padding: 0 0 15px 0;
+
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.features__item-description {
+  margin: 0;
+  padding: 0;
+
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.features__effect {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .features {
+    width: 100%;
+
+    background: linear-gradient(175deg, #ffffff 330px, #f2f2f2 330px);
+  }
+
+  .features__wrapper {
+    width: 93%;
+    max-width: 960px;
+  }
+
+  .features__text {
+    margin: 65px 0 0 0;
+
+    font-size: 40px;
+    line-height: 50px;
+
+    &:last-of-type {
+      width: 365px;
+      margin: 0;
+    }
+  }
+
+  .features__list {
+    max-width: 620px;
+    padding: 120px 0 0 310px;
+
+    text-align: left;
+
+    background-image: url("../img/iphone-screen-3-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: auto 480px;
+
+    br {
+      display: inline-block;
+    }
+  }
+
+  .features__item {
+
+    align-items: flex-start;
+    max-width: 320px;
+    padding: 0;
+    margin-bottom: 35px;
+  }
+
+  .features__item-feature,
+  .features__item-description {
+    text-align: left;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .features {
+    width: 100%;
+
+    background: linear-gradient(175deg, #ffffff 500px, #f2f2f2 500px);
+  }
+
+  .features__text {
+    margin: 80px 0 0 0;
+
+    font-size: 50px;
+    line-height: 65px;
+
+    &:last-of-type {
+      width: 465px;
+      margin-bottom: 80px;
+    }
+  }
+
+  .features__list {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    width: 98%;
+    max-width: 940px;
+    margin-bottom: 65px;
+    padding: 355px 0 0 0;
+
+    background-image: url("../img/iphone-screen-1-desktop@1x.png"),
+      url("../img/iphone-screen-2-desktop@1x.png"),
+      url("../img/iphone-screen-3-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-position: left -20px top, center top, right -25px top;
+    background-size: auto 300px;
+  }
+
+  .features__item {
+    align-items: center;
+    width: 245px;
+    margin-bottom: 0;
+
+    br {
+      display: none;
+    }
+  }
+
+  .features__item-feature {
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .features__item-description {
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .features__effect {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    padding: 100px 0 0 380px;
+
+    background-image: url("../img/icon-timer.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: auto 276px;
+
+    &::before {
+      position: absolute;
+      left: 17px;
+      top: 135px;
+      width: 202px;
+      height: 202px;
+
+      content: "24";
+
+      color: @lipstick;
+      font-size: 96px;
+      line-height: 150px;
+      font-weight: bold;
+      text-align: center;
+      vertical-align: middle;
+
+      border: 18px solid @lipstick;
+      border-radius: 50%;
+    }
+  }
+
+  .features__effect-title {
+    margin: 0 0 35px 0;
+    padding: 0;
+
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: bold;
+  }
+
+  .features__effect-text {
+    margin: 0 0 35px 0;
+    padding: 0;
+
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 300;
+  }
+
+  .features__effect-link {
+    margin: 0 0 115px 0;
+    padding: 0;
+
+    color: @lipstick;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 300;
+
+    &:hover {
+      color: @link--hover;
+    }
+
+    &:active {
+      color: @link--active;
+    }
+  }
 }
