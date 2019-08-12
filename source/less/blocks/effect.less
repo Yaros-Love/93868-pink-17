@@ -1,0 +1,123 @@
+.effect {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .effect {
+    display: flex;
+    width: 100%;
+
+    background-color: #ffffff;
+  }
+
+  .effect__wrapper {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    width: 88%;
+    max-width: 620px;
+    margin: 0 auto;
+    padding: 100px 0 0 310px;
+
+    background-image: url("../img/icon-timer.svg");
+    background-repeat: no-repeat;
+    background-position: left top 78px;
+    background-size: auto 276px;
+
+    &::before {
+      position: absolute;
+      left: 17px;
+      top: 135px;
+      width: 202px;
+      height: 202px;
+
+      content: "24";
+
+      color: @lipstick;
+      font-size: 96px;
+      line-height: 150px;
+      font-weight: bold;
+      text-align: center;
+      vertical-align: middle;
+
+      border: 18px solid @lipstick;
+      border-radius: 50%;
+    }
+  }
+
+  .effect-title {
+    margin: 0 0 35px 0;
+    padding: 0;
+
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: bold;
+  }
+
+  .effect-text {
+    margin: 0 0 35px 0;
+    padding: 0;
+
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 300;
+  }
+
+  .effect-link {
+    margin: 0 0 75px 0;
+    padding: 0;
+
+    color: @lipstick;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 300;
+
+    &:hover {
+      color: @link--hover;
+    }
+
+    &:active {
+      color: @link--active;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .effect {
+    background-color: #f2f2f2;
+  }
+
+  .effect__wrapper {
+    max-width: 940px;
+    padding: 170px 0 0 370px;
+
+    background-image: url("../img/icon-timer.svg");
+    background-repeat: no-repeat;
+    background-position: left top 70px;
+    background-size: auto 345px;
+
+    &::before {
+      position: absolute;
+      left: 23px;
+      top: 140px;
+      width: 250px;
+      height: 250px;
+
+      content: "24";
+
+      color: @lipstick;
+      font-size: 120px;
+      line-height: 187px;
+      font-weight: bold;
+      text-align: center;
+      vertical-align: middle;
+
+      border: 18px solid @lipstick;
+      border-radius: 50%;
+    }
+  }
+
+  .effect-link {
+    margin: 0 0 155px 0;
+  }
+}
