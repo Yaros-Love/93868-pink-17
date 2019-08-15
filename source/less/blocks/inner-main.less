@@ -31,6 +31,10 @@
   text-align: center;
 
   background-color: #ffffff;
+
+  .br-form {
+    display: none;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -45,8 +49,9 @@
   }
 
   .inner-main__title {
+    width: 740px;
     margin: 0 auto;
-    padding: 200px 130px 150px;
+    padding: 200px 0 150px;
 
     color: #ffffff;
     font-size: 50px;
@@ -66,17 +71,22 @@
     text-align: center;
 
     background-color: #ffffff;
+
+    .br-form {
+      display: inline-block;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
-  .inner-main__title {
-    text-align: center;
-  }
-
   .inner-main__wrapper {
     margin-top: -110px;
 
     background-image: url("../img/bg-back-desktop@1x.jpg");
+  }
+
+  .inner-main__title {
+    width: 820px;
+    text-align: center;
   }
 }
