@@ -66,11 +66,11 @@
               <ul class="user-name__list">
                 <li class="user-name__item">
                   <label for="userSurname">Фамилия:</label>
-                  <input type="text" name="userSurname" id="userSurname" placeholder="Укажите фамилию *" required><br>
+                  <input type="text" name="userSurname" id="userSurname" placeholder="Укажите фамилию *" required>
                 </li>
                 <li class="user-name__item">
                   <label for="userName">Имя:</label>
-                  <input type="text" name="userName" id="userName" placeholder="Ведите ваше имя *" required><br>
+                  <input type="text" name="userName" id="userName" placeholder="Ведите ваше имя *" required>
                 </li>
                 <li class="user-name__item">
                   <label for="patronymic">Отчество:</label>
@@ -84,23 +84,35 @@
               <legend class="skills__title">Ваши безбашенные <br> достижения в путешествии</legend>
               <ul class="skills__list">
                 <li class="skills__filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="selfie-with-shark" id="selfie-with-shark" value="selfie-with-shark" checked>
-                  <label for="selfie-with-shark">Сделал селфи с акулой</label></li>
+                  <label for="selfie-with-shark">
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="selfie-with-shark" id="selfie-with-shark" value="selfie-with-shark" checked>
+                    <span class="skills__check-box"></span>
+                    Сделал селфи с акулой</label></li>
                 <li class="skills__filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="sunburn" id="sunburn" value="sunburn" checked>
-                  <label for="sunburn">Обгорел на пляже</label></li>
+                  <label for="sunburn">
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="sunburn" id="sunburn" value="sunburn" checked>
+                    <span class="skills__check-box"></span>
+                    Обгорел на пляже</label></li>
                 <li class="skills__filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="saw-chack-norris" id="saw-chack-norris" value="saw-chack-norris">
-                  <label for="saw-chack-norris">Видел Чака Норриса</label></li>
+                  <label for="saw-chack-norris">
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="saw-chack-norris" id="saw-chack-norris" value="saw-chack-norris">
+                    <span class="skills__check-box"></span>
+                    Видел Чака Норриса</label></li>
                 <li class="skills__filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="bought-souvenirs" id="bought-souvenirs" value="bought-souvenirs">
-                  <label for="bought-souvenirs">Накупил сувениров</label></li>
+                  <label for="bought-souvenirs">
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="bought-souvenirs" id="bought-souvenirs" value="bought-souvenirs">
+                    <span class="skills__check-box"></span>
+                    Накупил сувениров</label></li>
                 <li class="skills__filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="held-tower" id="held-tower" value="held-tower" checked>
-                  <label for="held-tower">Удержал башню</label></li>
+                  <label for="held-tower">
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="held-tower" id="held-tower" value="held-tower" checked>
+                    <span class="skills__check-box"></span>
+                    Удержал башню</label></li>
                 <li class="skills__filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="defeated-hotel" id="defeated-hotel" value="defeated-hotel">
-                  <label for="defeated-hotel">Разгромил отель</label></li>
+                  <label for="defeated-hotel">
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="defeated-hotel" id="defeated-hotel" value="defeated-hotel">
+                    <span class="skills__check-box"></span>
+                    Разгромил отель</label></li>
                 </ul>
             </fieldset>
           </div>
@@ -109,11 +121,11 @@
               <legend class="contacts-field__title">Контактная информация</legend>
               <ul class="contacts-field__list">
                 <li class="contacts-field__item">
-                  <label for="user-tel">Номер телефона</label><br>
+                  <label for="user-tel">Номер телефона</label>
                   <input type="text" name="user-tel" id="user-tel" placeholder="Номер, пожалуйста">
                 </li>
                 <li class="contacts-field__item">
-                  <label for="user-email">Адрес почты</label><br>
+                  <label for="user-email">Адрес почты</label>
                   <input type="text" name="user-email" id="user-email" placeholder="Введите почту *" required>
                 </li>
               </ul>
@@ -124,16 +136,22 @@
               <legend class="platform-filter__title">С каким приложением путешествовали?</legend>
               <ul class="platform-filter__list">
                 <li class="platform-filter__option">
-                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="platform" id="ios" value="ios">
-                  <label for="ios">Pink для iOS</label>
+                  <label for="ios">
+                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="platform" id="ios" value="ios">
+                    <span class="platform-filter__radio"></span>
+                    Pink для iOS</label>
                 </li>
                 <li class="platform-filter__option">
-                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="platform" id="android" value="android">
-                  <label for="android">Pink на Android</label>
+                  <label for="android">
+                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="platform" id="android" value="android">
+                    <span class="platform-filter__radio"></span>
+                    Pink на Android</label>
                 </li>
                 <li class="platform-filter__option">
-                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="platform" id="windows" value="windows">
-                  <label for="windows">Windows Phone</label>
+                  <label for="windows">
+                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="platform" id="windows" value="windows">
+                    <span class="platform-filter__radio"></span>
+                    Windows Phone</label>
                 </li>
               </ul>
             </fieldset>
@@ -144,7 +162,7 @@
               <textarea class="user-text__text" name="name" rows="8" cols="80" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </fieldset>
           </div>
-          <div class="form__wrapper">
+          <div class="form__button-wrapper">
             <button class="form__button" type="submit" name="button">Отправить форму</button>
             <p class="form__text">* — обязательные поля</p>
           </div>
