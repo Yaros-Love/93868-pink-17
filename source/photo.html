@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>HTML Academy: Пинк</title>
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body class="inner">
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <div class="page-header__logo-toggle">
+          <a class="page-header__logo logo  logo__link" href="index.html">
+            <img class="page-header__logo-image logo__img" src="img/logo-pink-white-mobile.svg" width="96" height="15" alt="логотип сервиса Пинк">
+          </a>
+          <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
+            <svg version="1.0"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50" height="24" viewBox="0 0 49.945 24.007" enable-background="new 0 0 49.945 24.007" xml:space="preserve">
+              <g>
+                <g>
+                  <g>
+                    <path  fill="#FFFFFF" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
+                  </g>
+                  <g>
+                    <path fill="#FFFFFF" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </button>
+        </div>
+        <nav class="main-nav menu">
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a href="index.html">Главная</a>
+              </li>
+              <li class="site-list__item">
+                <a>Фотографии</a>
+              </li>
+              <li class="site-list__item">
+                <a href="form.html">Конкурс</a>
+              </li>
+              <li class="site-list__item">
+                <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="inner-main">
+      <div class="inner-main__wrapper">
+        <h1 class="inner-main__title">Фотографии <br> пользователей</h1>
+        <p class="inner-main__text">
+          Взгляните на фотографии, которые выкладывают пользователи! <br>Видите, как не хватает ваших?
+        </p>
+      </div>
+      <section class="main-picture">
+        <h2 class="visually-hidden">Панорама дня</h2>
+        <p class="main-picture__wrapper">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x">
+            <source media="(min-width: 768px)" srcset="img/panorama-tablet@1x.jpg 1x">
+            <img class="main-picture__img" src="img/panorama-mobile@1x.jpg" alt="панорама дня">
+          </picture>
+        </p>
+        <div class="main-picture__description">
+          <p class="main-picture__author">Анна <span class="main-picture__author-note">(5 минут назад)</span></p>
+          <p class="main-picture__text">Прыгать или нет?
+            Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
+          </p>
+          <p class="main-picture__likes">Нравится: 215</p>
+        </div>
+      </section>
+      <section class="galery">
+        <h2 class="visually-hidden">Фотогалерея</h2>
+        <ul class="galery__list">
+          <li class="galery__item">
+            <p class="galery__img-wrapper">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg 1x">
+                <source media="(min-width: 768px)" srcset="img/photo-car-tablet@1x.jpg 1x">
+                <img src="img/photo-car-mobile@1x.jpg" alt="Вчера он на луну летал, сегодня в руки к нам попал.">
+              </picture>
+            </p>
+            <div class="galery__item-description">
+              <p class="galery__item-author">Левон <span class="galery__item-author-note">(5 часов назад)</span></p>
+              <p class="galery__item-text">
+                Вчера он на луну летал, сегодня в руки к нам попал.
+              </p>
+              <p class="galery__item-likes">Нравится: 356</p>
+            </div>
+          </li>
+          <li class="galery__item">
+            <p class="galery__img-wrapper">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg 1x">
+                <source media="(min-width: 768px)" srcset="img/photo-drumset-tablet@1x.jpg 1x">
+                <img src="img/photo-drumset-mobile@1x.jpg" alt="Соседи будут рады!">
+              </picture>
+            </p>
+            <div class="galery__item-description">
+              <p class="galery__item-author">Антон <span class="galery__item-author-note">(12 часов назад)</span></p>
+              <p class="galery__item-text">Соседи будут рады!
+              </p>
+              <p class="galery__item-likes">Нравится: 666</p>
+            </div>
+          </li>
+          <li class="galery__item">
+            <p class="galery__img-wrapper">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg 1x">
+                <source media="(min-width: 768px)" srcset="img/photo-window-tablet@1x.jpg 1x">
+                <img src="img/photo-window-mobile@1x.jpg" alt="Здесь могла быть ваша цитата о высоком и вечном.">
+              </picture>
+            </p>
+            <div class="galery__item-description">
+              <p class="galery__item-author">Борис <span class="galery__item-author-note">(20 часов назад)</span></p>
+              <p class="galery__item-text">Здесь могла быть ваша цитата о высоком и вечном.
+              </p>
+              <p class="galery__item-likes">Нравится: 215</p>
+            </div>
+          </li>
+          <li class="galery__item">
+            <p class="galery__img-wrapper">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg 1x">
+                <source media="(min-width: 768px)" srcset="img/photo-fair-tablet@1x.jpg 1x">
+                <img src="img/photo-fair-mobile@1x.jpg" alt="Самая кубанская в мире!">
+              </picture>
+            </p>
+            <div class="galery__item-description">
+              <p class="galery__item-author">Сергей <span class="galery__item-author-note">(25 часов назад)</span></p>
+              <p class="galery__item-text">Самая кубанская в мире!
+              </p>
+              <p class="galery__item-likes">Нравится: 4</p>
+            </div>
+          </li>
+          <li class="galery__item">
+            <p class="galery__img-wrapper">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg 1x">
+                <source media="(min-width: 768px)" srcset="img/photo-pov-tablet@1x.jpg 1x">
+                <img src="img/photo-pov-mobile@1x.jpg" alt="Где снег-то?">
+              </picture>
+            </p>
+            <div class="galery__item-description">
+              <p class="galery__item-author">Максим <span class="galery__item-author-note">(40 часов назад)</span></p>
+              <p class="galery__item-text">Где снег-то?
+              </p>
+              <p class="galery__item-likes">Нравится: 150</p>
+            </div>
+          </li>
+          <li class="galery__item">
+            <p class="galery__img-wrapper">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg 1x">
+                <source media="(min-width: 768px)" srcset="img/photo-wing-tablet@1x.jpg 1x">
+                <img src="img/photo-wing-mobile@1x.jpg" alt="Всем GM и взаимные лайки!">
+              </picture>
+            </p>
+            <div class="galery__item-description">
+              <p class="galery__item-author">Надежда  <span class="galery__item-author-note">(45 часов назад)</span></p>
+              <p class="galery__item-text">
+                Всем GM и взаимные лайки!
+              </p>
+              <p class="galery__item-likes">Нравится: 2560</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="share">
+        <h2 class="share-_title">
+          Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!
+        </h2>
+        <img class="share__img" src="img/photo-road-mobile@1x.jpg" alt="загруженная фотография пользователя">
+        <div class="share__editor-tools tool">
+          <div class="tool__item tool-crop">Обрезать
+            <div class="tool__item-range range-controls">
+              <div class="range-controls__scale">
+                <div class="range-controls__bar"></div>
+              </div>
+              <div class="range-controls__toggle"></div>
+            </div>
+          </div>
+          <div class="tool tools-fill">Заливка
+            <div class="tool__item-range range-controls">
+              <div class="range-controls__scale">
+                <div class="range-controls__bar"></div>
+              </div>
+              <div class="range-controls__toggle"></div>
+            </div>
+          </div>
+          <div class="tool tool-diagram">Контраст
+            <div class="tool__item-range range-controls">
+              <div class="range-controls__scale">
+                <div class="range-controls__bar"></div>
+              </div>
+              <div class="range-controls__toggle"></div>
+            </div>
+          </div>
+        </div>
+        <button class="share__button button" type="submit">Запостить</button>
+        <button class="share__button button button--disabled" type="submit">Отмена</button>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <a class="inner-page-footer__logo logo  logo__link " href="index.html">
+          <img class="inner-page-footer__logo-image logo__img" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="логотип сервиса Пинк">
+        </a>
+          <ul class="inner-page-footer__social social-list">
+            <li class="social__item">
+              <a class="social__item-link" href="#">
+                <span class="visually-hidden">Мы в твиттере</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__item-link" href="#">
+                <span class="visually-hidden">Мы в фейсбуке</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__item-link" href="#">
+                <span class="visually-hidden">Мы в ютубе</span>
+              </a>
+            </li>
+          </ul>
+          <div class="copyright">
+            <span class="copyright__text">Разработано</span>
+            <a class="copyright__link" href="https://up.htmlacademy.ru/adaptive/17">
+              <svg xmlns="http://www.w3.org/2000/svg" width="27" height="34px" viewBox="0 0 60 60">
+                <path fill="#d22856" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+    </footer>
+  </body>
+</html>

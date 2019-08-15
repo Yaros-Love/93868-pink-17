@@ -1,0 +1,160 @@
+.galery {
+  display: flex;
+
+  width: 280px;
+  margin: 0 auto;
+}
+
+.galery__list {
+  .list-style-none;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.galery__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  margin: 20px 0;
+}
+
+.galery__img-wrapper {
+  display: flex;
+  width: 280px;
+  height: 180px;
+  margin: 0;
+  padding: 0;
+
+  img {
+    width: 100%;
+  }
+}
+
+.galery__item-description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  width: 280px;
+  padding: 25px 15px;
+  margin: 0 auto;
+
+  background-color: @cream;
+}
+
+.galery__item-author {
+  margin: 0;
+  padding: 0 0 5px 0;
+
+  color: @gray-blue;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+
+  .galery__item-author-note {
+    font-weight: 300;
+  }
+}
+
+.galery__item-text {
+  margin: 0;
+  padding: 0;
+
+  color: @gray-blue;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+}
+
+.galery__item-likes {
+  position: relative;
+  margin: 0;
+  padding: 15px 0 0 30px;
+
+  color: @lipstick;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+
+  &::before {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 12px;
+    height: 13px;
+
+    content: "";
+    background-image: url("../img/icon-heart.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .galery {
+    width: 620px;
+  }
+
+  .galery__list {
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    width: 620px;
+  }
+
+  .galery__img-wrapper {
+    width: 300px;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .galery__item-description {
+    width: 300px;
+
+    min-height: 166px;
+    padding: 25px 15px;
+  }
+
+  .galery__item-likes {
+    margin-top: auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .galery {
+    width: 940px;
+  }
+
+  .galery__list {
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    width: 940px;
+  }
+
+  .galery__img-wrapper {
+    width: 300px;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .galery__item-description {
+    width: 300px;
+
+    max-height: 156px;
+    padding: 25px 15px;
+  }
+
+  .galery__item-likes {
+    margin-top: auto;
+  }
+}
