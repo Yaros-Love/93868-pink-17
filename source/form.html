@@ -58,113 +58,114 @@
             Пожалуйста, заполните форму ниже:
           </span>
         </p>
-
         <form class="form" action="https://echo.htmlacademy.ru">
-          <div class="form__wrapper">
-            <fieldset class="user-name">
-              <legend class="visually-hidden">Ваше имя</legend>
-              <ul class="user-name__list">
-                <li class="user-name__item">
-                  <label for="userSurname">Фамилия:</label>
-                  <input type="text" name="userSurname" id="userSurname" placeholder="Укажите фамилию *" required>
-                </li>
-                <li class="user-name__item">
-                  <label for="userName">Имя:</label>
-                  <input type="text" name="userName" id="userName" placeholder="Ведите ваше имя *" required>
-                </li>
-                <li class="user-name__item">
-                  <label for="patronymic">Отчество:</label>
-                  <input type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
-                </li>
-              </ul>
-            </fieldset>
-          </div>
-          <div class="form__wrapper">
-            <fieldset class="skills">
-              <legend class="skills__title">Ваши безбашенные <br> достижения в путешествии</legend>
-              <ul class="skills__list">
-                <li class="skills__filter-option">
-                  <label for="selfie-with-shark">
-                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="selfie-with-shark" id="selfie-with-shark" value="selfie-with-shark" checked>
-                    <span class="skills__check-box"></span>
-                    Сделал селфи с акулой</label></li>
-                <li class="skills__filter-option">
-                  <label for="sunburn">
-                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="sunburn" id="sunburn" value="sunburn" checked>
-                    <span class="skills__check-box"></span>
-                    Обгорел на пляже</label></li>
-                <li class="skills__filter-option">
-                  <label for="saw-chack-norris">
-                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="saw-chack-norris" id="saw-chack-norris" value="saw-chack-norris">
-                    <span class="skills__check-box"></span>
-                    Видел Чака Норриса</label></li>
-                <li class="skills__filter-option">
-                  <label for="bought-souvenirs">
-                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="bought-souvenirs" id="bought-souvenirs" value="bought-souvenirs">
-                    <span class="skills__check-box"></span>
-                    Накупил сувениров</label></li>
-                <li class="skills__filter-option">
-                  <label for="held-tower">
-                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="held-tower" id="held-tower" value="held-tower" checked>
-                    <span class="skills__check-box"></span>
-                    Удержал башню</label></li>
-                <li class="skills__filter-option">
-                  <label for="defeated-hotel">
-                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="defeated-hotel" id="defeated-hotel" value="defeated-hotel">
-                    <span class="skills__check-box"></span>
-                    Разгромил отель</label></li>
+          <div class="form__desk-wrapper">
+            <div class="form__wrapper">
+              <fieldset class="user-name">
+                <legend class="visually-hidden">Ваше имя</legend>
+                <ul class="user-name__list">
+                  <li class="user-name__item">
+                    <label for="userSurname">Фамилия:</label>
+                    <input type="text" name="userSurname" id="userSurname" placeholder="Укажите фамилию *" required>
+                  </li>
+                  <li class="user-name__item">
+                    <label for="userName">Имя:</label>
+                    <input type="text" name="userName" id="userName" placeholder="Ведите ваше имя *" required>
+                  </li>
+                  <li class="user-name__item">
+                    <label for="patronymic">Отчество:</label>
+                    <input type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
+                  </li>
                 </ul>
-            </fieldset>
-          </div>
-          <div class="form__wrapper">
-            <fieldset class="contacts-field">
-              <legend class="contacts-field__title">Контактная информация</legend>
-              <ul class="contacts-field__list">
-                <li class="contacts-field__item">
-                  <label for="user-tel">Номер телефона</label>
-                  <input type="text" name="user-tel" id="user-tel" placeholder="Номер, пожалуйста">
-                </li>
-                <li class="contacts-field__item">
-                  <label for="user-email">Адрес почты</label>
-                  <input type="text" name="user-email" id="user-email" placeholder="Введите почту *" required>
-                </li>
-              </ul>
-            </fieldset>
-          </div>
-          <div class="form__wrapper">
-            <fieldset class="platform-filter">
-              <legend class="platform-filter__title">С каким приложением путешествовали?</legend>
-              <ul class="platform-filter__list">
-                <li class="platform-filter__option">
-                  <label for="ios">
-                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="platform" id="ios" value="ios">
-                    <span class="platform-filter__radio"></span>
-                    Pink для iOS</label>
-                </li>
-                <li class="platform-filter__option">
-                  <label for="android">
-                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="platform" id="android" value="android">
-                    <span class="platform-filter__radio"></span>
-                    Pink на Android</label>
-                </li>
-                <li class="platform-filter__option">
-                  <label for="windows">
-                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="platform" id="windows" value="windows">
-                    <span class="platform-filter__radio"></span>
-                    Windows Phone</label>
-                </li>
-              </ul>
-            </fieldset>
-          </div>
-          <div class="form__wrapper">
-            <fieldset class="user-text">
-              <legend class="user-text__title">Опишите свои эмоции</legend>
-              <textarea class="user-text__text" name="name" rows="8" cols="80" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-            </fieldset>
-          </div>
-          <div class="form__button-wrapper">
-            <button class="form__button" type="submit" name="button">Отправить форму</button>
-            <p class="form__text">* — обязательные поля</p>
+              </fieldset>
+            </div>
+            <div class="form__wrapper">
+              <fieldset class="skills">
+                <legend class="skills__title">Ваши безбашенные <br> достижения в путешествии</legend>
+                <ul class="skills__list">
+                  <li class="skills__filter-option">
+                    <label for="selfie-with-shark">
+                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="selfie-with-shark" id="selfie-with-shark" value="selfie-with-shark" checked>
+                      <span class="skills__check-box"></span>
+                      Сделал селфи с акулой</label></li>
+                  <li class="skills__filter-option">
+                    <label for="sunburn">
+                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="sunburn" id="sunburn" value="sunburn" checked>
+                      <span class="skills__check-box"></span>
+                      Обгорел на пляже</label></li>
+                  <li class="skills__filter-option">
+                    <label for="saw-chack-norris">
+                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="saw-chack-norris" id="saw-chack-norris" value="saw-chack-norris">
+                      <span class="skills__check-box"></span>
+                      Видел Чака Норриса</label></li>
+                  <li class="skills__filter-option">
+                    <label for="bought-souvenirs">
+                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="bought-souvenirs" id="bought-souvenirs" value="bought-souvenirs">
+                      <span class="skills__check-box"></span>
+                      Накупил сувениров</label></li>
+                  <li class="skills__filter-option">
+                    <label for="held-tower">
+                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="held-tower" id="held-tower" value="held-tower" checked>
+                      <span class="skills__check-box"></span>
+                      Удержал башню</label></li>
+                  <li class="skills__filter-option">
+                    <label for="defeated-hotel">
+                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="defeated-hotel" id="defeated-hotel" value="defeated-hotel">
+                      <span class="skills__check-box"></span>
+                      Разгромил отель</label></li>
+                  </ul>
+              </fieldset>
+            </div>
+            <div class="form__wrapper">
+              <fieldset class="contacts-field">
+                <legend class="contacts-field__title">Контактная информация</legend>
+                <ul class="contacts-field__list">
+                  <li class="contacts-field__item">
+                    <label for="user-tel">Номер телефона</label>
+                    <input type="text" name="user-tel" id="user-tel" placeholder="Номер, пожалуйста">
+                  </li>
+                  <li class="contacts-field__item">
+                    <label for="user-email">Адрес почты</label>
+                    <input type="text" name="user-email" id="user-email" placeholder="Введите почту *" required>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+            <div class="form__wrapper">
+              <fieldset class="platform-filter">
+                <legend class="platform-filter__title">С каким приложением путешествовали?</legend>
+                <ul class="platform-filter__list">
+                  <li class="platform-filter__option">
+                    <label for="ios">
+                      <input class="visually-hidden filter-input filter-input-radio" type="radio" name="platform" id="ios" value="ios" checked>
+                      <span class="platform-filter__radio"></span>
+                      Pink для iOS</label>
+                  </li>
+                  <li class="platform-filter__option">
+                    <label for="android">
+                      <input class="visually-hidden filter-input filter-input-radio" type="radio" name="platform" id="android" value="android">
+                      <span class="platform-filter__radio"></span>
+                      Pink на Android</label>
+                  </li>
+                  <li class="platform-filter__option">
+                    <label for="windows">
+                      <input class="visually-hidden filter-input filter-input-radio" type="radio" name="platform" id="windows" value="windows">
+                      <span class="platform-filter__radio"></span>
+                      Windows Phone</label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+            <div class="form__wrapper">
+              <fieldset class="user-text">
+                <legend class="user-text__title">Опишите свои эмоции</legend>
+                <textarea class="user-text__text" name="name" rows="8" cols="80" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+              </fieldset>
+            </div>
+            <div class="form__button-wrapper">
+              <button class="form__button" type="submit" name="button">Отправить форму</button>
+              <p class="form__text">* — обязательные <span>для заполнения поля</span> поля</p>
+            </div>
           </div>
         </div>
       </form>
