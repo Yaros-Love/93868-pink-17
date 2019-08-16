@@ -78,6 +78,11 @@
     background-position: center 0;
     background-repeat: no-repeat;
     background-size: cover;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("img/bg-back-tablet@2x.jpg");
+      background-size: 1200px auto;
+    }
   }
 
   .presentation__wrapper {
