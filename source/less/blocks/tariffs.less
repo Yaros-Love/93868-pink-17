@@ -1,0 +1,238 @@
+.tarrifs__wrapper {
+  position: relative;
+  background-color: #f2f2f2;
+  padding-top: 91px;
+  padding-bottom: 42px;
+  overflow: hidden;
+}
+
+.tarrifs__container {
+  width: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+.tariffs__table {
+  width: 172.5%;
+  position: relative;
+  left: 50%;
+
+  transform: translateX(-50%);
+  border-collapse: collapse;
+}
+
+.tariffs__header {
+  position: relative;
+  background-color: #283645;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 20px;
+  padding-top: 17px;
+  border-right: 2px solid #f2f2f2;
+}
+
+.tariffs__option {
+  position: relative;
+
+  padding-top: 17px;
+  padding-right: 68px;
+  padding-bottom: 18px;
+  padding-left: 22px;
+
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+  border-top-width: 0;
+  background-clip: padding-box;
+}
+
+.tariffs__name {
+  margin: 0;
+
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  &--hit {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      top: -17px;
+      left: -20px;
+      content: "";
+      width: 74px;
+      height: 73px;
+
+      background-image: url("../img/bg-hit.svg");
+    }
+
+    &::after {
+      position: absolute;
+      top: -17px;
+      left: -20px;
+      content: "Хит";
+      width: 74px;
+      height: 73px;
+      padding: 10px;
+
+      font-size: 10px;
+      line-height: 21px;
+      text-align: center;
+      text-transform: uppercase;
+
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+.tariffs__price {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.tariffs__feature {
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.tariffs__feature--name {
+  text-transform: uppercase;
+}
+
+.tariffs__availble {
+  position: absolute;
+  display: block;
+  width: 31px;
+  height: 30px;
+  top: 13px;
+  right: 17px;
+  text-indent: -1000px;
+  overflow: hidden;
+}
+
+.tariffs__availble--yes {
+  background: url("../img/icon-yes--table.svg") no-repeat center;
+  background-size: 31px 21px;
+}
+.tariffs__availble--no {
+  background: url("../img/icon-no--table.svg") no-repeat center;
+  background-size: 27px 26px;
+}
+
+@media (max-width: 659px) {
+  .tariffs__header {
+    min-width: 280px;
+  }
+
+  .tariffs__empty-th {
+    display: none;
+  }
+
+  .tariffs__option.tariffs__option--title {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .tarrifs__wrapper {
+    padding-top: 88px;
+    padding-bottom: 68px;
+  }
+
+  .tarrifs__container {
+    width: 660px;
+  }
+
+  .tariffs__table {
+    width: 100%;
+  }
+
+  .tarrifs__header {
+    padding-top: 10px;
+    padding-bottom: 9px;
+    width: 25%;
+  }
+
+  .tariffs__name {
+    font-size: 16px;
+
+    &--hit {
+      position: relative;
+
+      &::before {
+        position: absolute;
+        top: -17px;
+        left: -20px;
+        content: "";
+
+        background-image: url("../img/bg-hit.svg");
+        background-repeat: no-repeat;
+        background-size: 61px 61px;
+      }
+
+      &::after {
+        position: absolute;
+        top: -17px;
+        left: -20px;
+        content: "Хит";
+        width: 74px;
+        height: 73px;
+        padding: 5px;
+
+        font-size: 14px;
+        line-height: 21px;
+        font-weight: normal;
+        text-align: center;
+        text-transform: uppercase;
+
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  .tariffs__option {
+    padding: 7px 16px 8px;
+  }
+
+  .tariffs__option--title {
+    border-top-width: 2px;
+  }
+
+  .tariffs__feature--name {
+    .visually-hidden;
+  }
+
+  .tariffs__availble {
+    position: relative;
+    top: auto;
+    right: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 960px) {
+  .tarrifs__wrapper {
+    padding-top: 142px;
+    padding-bottom: 95px;
+  }
+
+  .tarrifs__container {
+    width: 940px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .tarrifs__header {
+    padding-top: 20px;
+    padding-bottom: 17px;
+  }
+
+  .tariffs__option {
+    padding: 16px 22px 13px;
+  }
+}

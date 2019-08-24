@@ -1,12 +1,32 @@
+.inner-main {
+  margin-top: -65px;
+}
 .inner-main__wrapper {
   width: 100%;
-  margin-top: -65px;
 
   background-color: @gray-blue;
   background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-position: top left;
+  background-position: top center;
   background-repeat: no-repeat;
-  background-size: 100% auto;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 659px) {
+  .inner-main__wrapper {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: 1200px auto;
+    }
+  }
 }
 
 .inner-main__title {
@@ -38,14 +58,21 @@
 }
 
 @media (min-width: @tablet-width) {
-  .inner-main__wrapper {
-    margin-top: -105px;
+  .inner-main {
+    margin-top: -110px;
+  }
 
+  .inner-main__wrapper {
     background-color: @gray-blue;
     background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-position: top center;
+    background-position: center 0;
     background-repeat: no-repeat;
-    background-size: 200% auto;
+    background-size: cover;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: 1200px auto;
+    }
   }
 
   .inner-main__title {
@@ -83,6 +110,17 @@
     margin-top: -110px;
 
     background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-repeat: no-repeat;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: 2560px auto;
+      background-position: top 12px center;
+    }
+
+    @media (min-width: 2560px) {
+      background-size: cover;
+    }
   }
 
   .inner-main__title {
