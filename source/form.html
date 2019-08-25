@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Пинк</title>
   <link href="css/style.css" rel="stylesheet">
-  <script src="js/picturefill.js"></script>
 </head>
   <body class="inner">
     <svg style="display:none">
@@ -78,7 +77,6 @@
           <path fill="#d22856" d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932 c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z"/>
       </symbol>
     </svg>
-
     <header class="page-header page-header--nojs">
       <div class="page-header__wrapper">
         <div class="page-header__logo-toggle">
@@ -132,6 +130,7 @@
             Пожалуйста, заполните форму ниже:
           </span>
         </p>
+      </div>
         <form class="form" action="https://echo.htmlacademy.ru">
           <div class="form__desk-wrapper">
             <div class="form__wrapper">
@@ -250,23 +249,29 @@
       <a class="inner-page-footer__logo logo  logo__link " href="index.html">
         <img class="inner-page-footer__logo-image logo__img" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="логотип сервиса Пинк">
       </a>
-        <ul class="inner-page-footer__social social-list">
-          <li class="social__item">
-            <a class="social__item-link" href="#">
-              <span class="visually-hidden">Мы в твиттере</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__item-link" href="#">
-              <span class="visually-hidden">Мы в фейсбуке</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__item-link" href="#">
-              <span class="visually-hidden">Мы в ютубе</span>
-            </a>
-          </li>
-        </ul>
+      <ul class="inner-page-footer__social social-list">
+        <li class="social__item">
+          <a class="social__item-link link" href="#" aria-label="Мы в твиттере">
+            <svg class="link-svg link-svg--twitter" width="18px" height="14px">
+              <use xlink:href="#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__item-link" href="#" aria-label="Мы в фейсбуке">
+            <svg class="link-svg link-svg--facebook" width="8.673px" height="18.944px">
+              <use xlink:href="#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__item-link" href="#" aria-label="Мы в ютубе">
+            <svg class="link-svg link-svg--youtube" width="14.64px" height="13.96px">
+              <use xlink:href="#icon-youtube"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
         <div class="copyright">
           <span class="copyright__text">Разработано</span>
           <a class="copyright__link" href="https://up.htmlacademy.ru/adaptive/17">
@@ -278,5 +283,6 @@
       </div>
     </footer>
     <script src="js/scripts.js"></script>
+    <script src="js/picturefill.js"></script>
   </body>
 </html>
