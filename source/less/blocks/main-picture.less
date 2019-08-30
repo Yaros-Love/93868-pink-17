@@ -15,7 +15,7 @@
 
   &::after {
     position: absolute;
-    display:  block;
+    display: block;
     top: 0;
     right: 20px;
 
@@ -48,15 +48,15 @@
   align-items: flex-start;
 
   width: 280px;
-  padding: 25px 15px;
+  padding: 15px;
   margin: 0 auto;
 
   background-color: @cream;
 }
 
 .main-picture__author {
-  margin: 0;
-  padding: 0 0 5px 0;
+  margin: 0 0 2px 0;
+  padding: 0;
 
   color: @gray-blue;
   font-size: 14px;
@@ -80,8 +80,8 @@
 
 .main-picture__likes {
   position: relative;
-  margin: 0;
-  padding: 15px 0 0 30px;
+  margin: 0 0 5px;
+  padding: 10px 0 0 30px;
 
   color: @lipstick;
   font-size: 12px;
@@ -90,7 +90,7 @@
 
   &::before {
     position: absolute;
-    top: 20px;
+    top: 15px;
     left: 0;
     width: 12px;
     height: 13px;
@@ -102,10 +102,14 @@
 }
 
 @media (min-width: @tablet-width) {
+  .main-picture {
+    margin-bottom: 0;
+  }
+
   .main-picture__wrapper {
     width: 100%;
     max-width: 1200px;
-    height: 506px;
+    height: 509px;
 
     .main-picture__img {
       width: 1200px;
@@ -114,17 +118,16 @@
       left: 120px;
       transform: translateX(-120px);
 
+      .main-picture__img {
+        height: 509px;
+      }
+    }
 
     &::after {
-      top: 60px;
-    }
-
-    .main-picture__img {
-      height: 509px;
+      top: 57px;
+      right: 10px;
     }
   }
-}
-
 
   .main-picture__description {
     flex-direction: row;
@@ -133,12 +136,12 @@
     justify-content: space-between;
 
     width: 620px;
-    padding: 30px 25px;
+    padding: 10px 28px 0;
   }
 
   .main-picture__author {
     margin: 0;
-    padding: 0 0 5px 0;
+    padding: 0;
 
     color: @gray-blue;
     font-size: 14px;
@@ -153,12 +156,12 @@
   .main-picture__text {
     flex-grow: 1;
     order: 3;
-    margin: 0;
+    margin: 0 0 12px 0;
     padding: 0;
 
     color: @gray-blue;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 20px;
     font-weight: 300;
   }
 
@@ -187,6 +190,40 @@
 @media (min-width: @desktop-width) {
   .main-picture__description {
     width: 940px;
-    padding: 25px 30px;
+    padding: 10px 27px;
+  }
+
+  .main-picture__wrapper {
+    height: 506px;
+
+    .main-picture__img {
+      height: 506px;
+    }
+
+    &::after {
+      top: 54px;
+      right: 2px;
+    }
+  }
+
+  .main-picture__likes {
+    padding: 15px 36px 0 0;
+    order: 1;
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      position: absolute;
+      top: 20px;
+      right: 6px;
+      width: 12px;
+      height: 13px;
+
+      content: "";
+      background-image: url("../img/icon-heart.svg");
+      background-repeat: no-repeat;
+    }
   }
 }

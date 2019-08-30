@@ -29,12 +29,24 @@
 
 .tariffs__header {
   position: relative;
+
   background-color: #283645;
   color: #ffffff;
   text-transform: uppercase;
   padding: 20px;
   padding-top: 16px;
   border-right: 2px solid #f2f2f2;
+
+  &:nth-of-type(2) {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+
+  &:last-of-type {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-right: none;
+  }
 }
 
 .tariffs__option {
@@ -149,22 +161,25 @@
 
 @media (min-width: @tablet-width) {
   .tarrifs__wrapper {
-    padding-top: 88px;
+    padding-top: 105px;
     padding-bottom: 68px;
+
+    background-size: 135%;
   }
 
   .tarrifs__container {
-    width: 660px;
+    width: 620px;
+    padding: 0;
   }
 
   .tariffs__table {
     width: 100%;
   }
 
-  .tarrifs__header {
+  .tariffs__header {
     padding-top: 10px;
     padding-bottom: 9px;
-    width: 25%;
+    width: 155px;
   }
 
   .tariffs__name {
@@ -176,19 +191,26 @@
       &::before {
         position: absolute;
         top: -17px;
-        left: -20px;
+        left: -22px;
+
         content: "";
+
+        padding-top: 7px;
+        padding-left: 2px;
 
         background-image: url("../img/bg-hit.svg");
         background-repeat: no-repeat;
-        background-size: 61px 61px;
+        background-size: 70px 70px;
+        background-clip: content-box;
       }
 
       &::after {
         position: absolute;
-        top: -17px;
-        left: -20px;
+        top: -13px;
+        left: -21px;
+
         content: "Хит";
+
         width: 74px;
         height: 73px;
         padding: 5px;
@@ -202,6 +224,13 @@
         transform: rotate(-45deg);
       }
     }
+  }
+
+  .tariffs__price {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
   }
 
   .tariffs__option {
@@ -223,26 +252,60 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  .tariffs__slider-radio.radio {
+    display: none;
+  }
 }
 
 @media (min-width: 960px) {
   .tarrifs__wrapper {
-    padding-top: 142px;
+    padding-top: 165px;
     padding-bottom: 95px;
+
+    background-size: 120%;
   }
 
   .tarrifs__container {
     width: 940px;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding: 0;
   }
 
-  .tarrifs__header {
+  .tariffs__header {
+    width: 235px;
     padding-top: 20px;
     padding-bottom: 17px;
   }
 
+  .tariffs__name {
+    font-size: 18px;
+
+    &--hit {
+      &::before {
+        top: -20px;
+        left: -20px;
+        padding-top: 0;
+        padding-left: 0;
+      }
+
+      &::after {
+        position: absolute;
+        top: -16px;
+        left: -18px;
+      }
+    }
+  }
+
+  .tariffs__price {
+    font-size: 24px;
+  }
+
   .tariffs__option {
     padding: 16px 22px 13px;
+
+    &--title .tariffs__feature {
+      font-size: 18px;
+      line-height: 30px;
+    }
   }
 }
