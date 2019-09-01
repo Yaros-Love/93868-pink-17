@@ -19,7 +19,7 @@
 @media (min-width: 321px) and (max-width: 659px) {
   .inner-main__wrapper {
     background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-position: top center;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -65,13 +65,17 @@
     display: inline-block;
   }
 
-  .br-form {
-    display: inline-block;
+  .inner-main__text--br-tablet {
+    display: none;
   }
 }
 
 .inner-main__text--form {
   padding: 45px 20px 35px;
+
+  .br-form {
+    display: none;
+  }
 
   .inner-main__text-hidden {
     display: none;
@@ -123,6 +127,14 @@
     text-align: center;
 
     background-color: #ffffff;
+
+    .inner-main__text--br-tablet {
+      display: inline-block;
+    }
+
+    .inner-main__text--br-desktop {
+      display: none;
+    }
   }
 
   .inner-main__text--form {
