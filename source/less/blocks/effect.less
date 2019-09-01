@@ -14,39 +14,35 @@
     position: relative;
     display: inline-flex;
     flex-direction: column;
-    width: 88%;
-    max-width: 620px;
+    width: 620px;
     margin: 0 auto;
     padding: 100px 0 0 310px;
 
     background-image: url("../img/icon-timer.svg");
     background-repeat: no-repeat;
-    background-position: left top 78px;
+    background-position: left top 60px;
     background-size: auto 276px;
 
     &::before {
       position: absolute;
-      left: 17px;
-      top: 135px;
+      left: 19px;
+      top: 114px;
       width: 202px;
       height: 202px;
-
       content: "24";
-
-      color: @lipstick;
+      color: #d22856;
       font-size: 96px;
-      line-height: 150px;
+      line-height: 167px;
       font-weight: bold;
       text-align: center;
       vertical-align: middle;
-
-      border: 18px solid @lipstick;
+      border: 13px solid #d22856;
       border-radius: 50%;
     }
   }
 
   .effect-title {
-    margin: 0 0 35px 0;
+    margin: 0 0 18px 0;
     padding: 0;
 
     font-size: 30px;
@@ -55,11 +51,11 @@
   }
 
   .effect-text {
-    margin: 0 0 35px 0;
+    margin: 0 0 10px 0;
     padding: 0;
 
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 14px;
+    line-height: 24px;
     font-weight: 300;
   }
 
@@ -68,8 +64,8 @@
     padding: 0;
 
     color: @lipstick;
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 14px;
+    line-height: 24px;
     font-weight: 300;
 
     &:hover {
@@ -88,36 +84,56 @@
   }
 
   .effect__wrapper {
-    max-width: 940px;
-    padding: 170px 0 0 370px;
+    width: 940px;
+    padding: 95px 0 0 370px;
 
     background-image: url("../img/icon-timer.svg");
     background-repeat: no-repeat;
-    background-position: left top 70px;
+    background-position: left top;
     background-size: auto 345px;
 
     &::before {
       position: absolute;
-      left: 23px;
-      top: 140px;
+      left: 24px;
+      top: 70px;
       width: 250px;
       height: 250px;
-
       content: "24";
-
-      color: @lipstick;
+      color: #d22856;
       font-size: 120px;
-      line-height: 187px;
+      line-height: 200px;
       font-weight: bold;
       text-align: center;
       vertical-align: middle;
-
-      border: 18px solid @lipstick;
+      border: 18px solid #d22856;
       border-radius: 50%;
+    }
+
+    br {
+      display: none;
+    }
+
+    .features__item-feature--br {
+      display: block;
     }
   }
 
+  .effect-title {
+    margin: 0 0 23px 0;
+  }
+
+  .effect-text {
+    margin: 0 0 30px 0;
+    padding: 0;
+
+    font-size: 18px;
+    line-height: 30px;
+  }
+
   .effect-link {
-    margin: 0 0 155px 0;
+    margin: 0 0 115px 0;
+
+    font-size: 18px;
+    line-height: 30px;
   }
 }

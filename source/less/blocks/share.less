@@ -1,0 +1,416 @@
+.share {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.share-_title {
+  margin: 43px 0;
+
+  width: 280px;
+
+  color: @gray-blue;
+
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  font-weight: normal;
+}
+
+.share__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  padding: 20px 0 40px;
+
+
+  background-color: @cream;
+}
+
+.share__wrapper-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+}
+
+.share__img {
+  width: 280px;
+}
+
+.share__options-list {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 200px;
+  .list-style-none;
+  margin-top: 40px;
+
+  font-size: 0;
+}
+
+.share__option {
+  padding-bottom: 75px;
+
+  cursor: pointer;
+
+  .share__control {
+    position: absolute;
+    bottom: 38px;
+    left: -18px;
+
+    .range-controls__bar {
+      position: relative;
+      width: 240px;
+      height: 2px;
+      background-color: #000000;
+    }
+
+    .range-controls__btn {
+      position: absolute;
+      top: 50%;
+      left: 80%;
+      transform: translateY(-50%);
+      width: 15px;
+      height: 15px;
+
+      background-color: @cream;
+      border: 2px solid @lipstick;
+      border-radius: 50%;
+
+      &:active {
+        background-color: @lipstick;
+      }
+    }
+  }
+}
+
+.share__option:not(.share__option--active) {
+  .share__option-name {
+    .share__option-icon {
+      fill: @gray-blue;
+      opacity: 0.3;
+    }
+  }
+
+  &:hover {
+    .share__option-icon {
+      fill: @gray-blue;
+      opacity: 0.5;
+    }
+  }
+
+  &:active {
+    .share__option-icon {
+      fill: @lipstick;
+      opacity: 1;
+    }
+  }
+
+  .share__control {
+    display: none;
+  }
+}
+
+.share__option-name {
+  text-align: center;
+  vertical-align: middle;
+
+  .share__option-icon--active {
+    fill: @lipstick;
+  }
+}
+
+.share__button-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.share__button--post {
+  margin-top: 35px;
+
+  color: @lipstick;
+
+  border: 3px solid @lipstick;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover {
+    color: #ffffff;
+    background-color: @lipstick;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.share__button.share__button--cancel {
+  margin-top: 10px;
+
+  color: @gray-blue-rgba;
+
+  border: 3px solid @gray-blue-rgba;
+  opacity: 0.1;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.3;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: @gray-blue-rgba;
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .share-_title {
+    width: 620px;
+    margin: 66px 0 69px;
+
+    font-size: 18px;
+  }
+
+  .share__wrapper {
+    flex-direction: row;
+    justify-content: center;
+
+    padding: 60px 20px 55px;
+  }
+
+  .share__wrapper-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 25px;
+
+    width: 300px;
+    height: 400px;
+  }
+
+  .share__img {
+    flex-shrink: 0;
+    width: 300px;
+    margin-right: 20px;
+  }
+
+  .share__options-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    width: 275px;
+    .list-style-none;
+    margin-top: -20px;
+  }
+
+  .share__option {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 275px;
+    height: 72px;
+    padding: 0;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+    .share__option-name .share__option-icon {
+      width: 22px;
+      height: 22px;
+    }
+
+    .share__control {
+      position: absolute;
+      top: 50%;
+      left: 56%;
+
+      transform: translateX(-50%);
+
+      .range-controls__bar {
+        width: 200px;
+      }
+
+      .range-controls__btn {
+        left: 73%;
+      }
+    }
+  }
+
+  .share__option:not(.share__option--active) {
+    .share__control {
+      display: block;
+    }
+
+    &:nth-of-type(2) {
+      .share__option-icon {
+        width: 24px;
+        height: 22px;
+      }
+
+      .share__control {
+        .range-controls__btn {
+          left: 12%;
+        }
+      }
+    }
+
+    &:nth-of-type(3) {
+      .share__option-icon {
+        width: 16px;
+        height: 16px;
+      }
+
+      .share__control {
+        .range-controls__btn {
+          left: 49%;
+        }
+      }
+    }
+  }
+
+  .share__option-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 30px;
+  }
+
+  .share__button-wrapper {
+    justify-content: space-between;
+
+    width: 300px;
+    height: 135px;
+
+    border-top: none;
+  }
+
+  .share__button {
+    width: 260px;
+
+    &--post {
+      margin-top: 0;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .share-_title {
+    width: 800px;
+    margin: 63px 0 65px;
+  }
+
+  .share__wrapper {
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 940px;
+
+    padding: 57px 80px 57px;
+  }
+
+  .share__wrapper-inner {
+    padding: 0;
+
+    width: 410px;
+    height: 400px;
+  }
+
+  .share__img {
+    flex-shrink: 0;
+    width: 300px;
+    margin: 0 90px 0 0;
+  }
+
+  .share__options-list {
+    width: 100%;
+  }
+
+  .share__option {
+    width: 410px;
+
+    .share__option-name .share__option-icon {
+      width: 44px;
+      height: 44px;
+    }
+
+    .share__control {
+      left: 58%;
+
+      .range-controls__bar {
+        width: 288px;
+      }
+
+      .range-controls__btn {
+        left: 25%;
+      }
+    }
+  }
+
+  .share__option:not(.share__option--active) {
+    .share__control {
+      display: block;
+    }
+
+    &:nth-of-type(2) {
+      .share__option-icon {
+        width: 48px;
+        height: 43px;
+      }
+
+      .share__control {
+        .range-controls__btn {
+          left: 86%;
+        }
+      }
+    }
+
+    &:nth-of-type(3) {
+      .share__option-icon {
+        width: 32px;
+        height: 32px;
+      }
+
+      .share__control {
+        .range-controls__btn {
+          left: 56%;
+        }
+      }
+    }
+  }
+
+  .share__option-name {
+    width: 50px;
+  }
+
+  .share__button-wrapper {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+    width: 410px;
+    height: auto;
+  }
+
+  .share__button {
+    width: 183px;
+
+    font-size: 18px;
+    line-height: 18px;
+
+    &--post {
+      margin-right: 45px;
+    }
+  }
+}

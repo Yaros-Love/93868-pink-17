@@ -14,7 +14,7 @@
     background-image: url("/img/bg-triangle-white-footer.svg");
     background-repeat: no-repeat;
     background-position: top center;
-    background-size: contain;
+    background-size: 100%;
 
     z-index: 10px;
   }
@@ -31,7 +31,7 @@
 }
 
 .contact-us__title {
-  margin: 50px 0 40px 0;
+  margin: 40px 0 35px 0;
   padding: 0;
 
   color: @gray-blue;
@@ -44,6 +44,7 @@
 
 .contact-us__list {
   .list-style-none;
+  margin-bottom: 15px;
 
   display: flex;
   flex-direction: column;
@@ -57,7 +58,7 @@
 }
 
 .contact-us__text-bold {
-  margin: 0 0 10px 0;
+  margin: 0 0 2px 0;
   padding: 0;
 
   color: @gray-blue;
@@ -72,7 +73,7 @@
 .contact-us__phone,
 .contact-us__email {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 23px;
   padding: 0;
 
   color: @lipstick;
@@ -82,4 +83,84 @@
   font-weight: 300;
   text-align: center;
   text-decoration: none;
+}
+
+.contact-us__email {
+  &:hover {
+    color: @gray-blue;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: @link--active;
+    text-decoration: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .contact-us__wrapper {
+    width: 620px;
+    max-width: none;
+  }
+
+  .contact-us__title {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .contact-us__list {
+    .list-style-none;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    width: 620px;
+  }
+
+  .contact-us__item {
+    width: 300px;
+    padding: 10px;
+
+    &:last-of-type {
+      padding: 15px;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contact-us__wrapper {
+    width: 940px;
+  }
+
+  .contact-us__title {
+    margin: 60px 0 45px;
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .contact-us__list {
+    align-items: baseline;
+    width: 940px;
+  }
+
+  .contact-us__item {
+    p {
+      margin-bottom: 25px;
+    }
+
+    &--phone {
+      order: 1;
+    }
+
+    &--write {
+      order: 3;
+    }
+
+    &--adress {
+      order: 2;
+    }
+  }
 }
