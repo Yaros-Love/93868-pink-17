@@ -104,7 +104,6 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-
 }
 
 .skills__filter-option {
@@ -584,25 +583,12 @@
       padding-bottom: 10px;
     }
 
-    .contacts-field__icon {
-      position: absolute;
+    .contacts-field__input--phone {
+      background: url("../img/icon-phone.svg") no-repeat center right 20px, linear-gradient(to left, #e5e5e5 60px, white 60px);
+    }
 
-      bottom: 54px;
-      left: 434px;
-
-      width: 60px;
-      height: 60px;
-      background-color: @light-gray;
-      background-position: center;
-      background-repeat: no-repeat;
-
-      &--phone {
-        background-image: url("../img/icon-phone.svg");
-      }
-
-      &--mail {
-        background-image: url("../img/icon-mail.svg");
-      }
+    .contacts-field__input--mail {
+      background: url("../img/icon-mail.svg") no-repeat center right 20px, linear-gradient(to left, #e5e5e5 60px, white 60px);
     }
   }
 
@@ -791,27 +777,6 @@
 
       padding-left: 19px;
       padding-bottom: 10px;
-    }
-
-    .contacts-field__icon {
-      position: absolute;
-
-      bottom: 54px;
-      left: 313px;
-
-      width: 60px;
-      height: 60px;
-      background-color: @light-gray;
-      background-position: center;
-      background-repeat: no-repeat;
-
-      &--phone {
-        background-image: url("../img/icon-phone.svg");
-      }
-
-      &--mail {
-        background-image: url("../img/icon-mail.svg");
-      }
     }
   }
 

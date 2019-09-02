@@ -96,7 +96,7 @@
   background-color: @dark-blue;
 }
 
-.presentation__link {
+.presentation__button {
   margin-bottom: 30px;
 
   color: white;
@@ -122,14 +122,14 @@
   margin-bottom: 25px;
 }
 
-.icon__item {
+.presentation__item {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 80px;
 }
 
-.icon__link {
+.presentation__link {
   width: 57px;
   height: 57px;
 
@@ -141,21 +141,21 @@
   }
 }
 
-.icon__link--apple {
+.presentation__link--apple {
   background-image: url("../img/logo-apple.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 47px 56px;
 }
 
-.icon__link--android {
+.presentation__link--android {
   background-image: url("../img/logo-android.svg");
   background-repeat: no-repeat;
   background-position: center top 10px;
   background-size: 43px 47px;
 }
 
-.icon__link--windows {
+.presentation__link--windows {
   background-image: url("../img/logo-microsoft.svg");
   background-repeat: no-repeat;
   background-position: center top 13px;
@@ -177,7 +177,6 @@
 @media (min-width: @tablet-width) {
   .presentation {
     background-color: @dark-blue;
-    // background-image: url("../img/bg-back-mobile@1x.jpg");
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-position: center 0;
     background-repeat: no-repeat;
@@ -251,7 +250,8 @@
     justify-content: center;
     align-items: center;
 
-    margin-bottom: 35px;
+    margin-top: 15px;
+    margin-bottom: -15px;
   }
 
   .presentation__text {
@@ -316,10 +316,11 @@
   }
 
   .presentation__links {
-    margin-bottom: 45px;
+    margin-top: 50px;
+    margin-bottom: 18px;
   }
 
-  .icon__item {
+  .presentation__item {
     width: 80px;
     height: 80px;
   }
