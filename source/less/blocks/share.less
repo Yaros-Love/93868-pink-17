@@ -41,98 +41,85 @@
   width: 280px;
 }
 
-.share__options-list {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  width: 200px;
-  .list-style-none;
-  margin-top: 40px;
-
-  font-size: 0;
+.share__fieldset {
+  width: 280px;
+  border: none;
+  margin: 0;
+  padding: 0;
 }
 
-.share__option {
-  padding-bottom: 75px;
+.share__inputs {
+  width: 270px;
+  margin: 35px auto 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
 
   cursor: pointer;
-
-  .share__control {
-    position: absolute;
-    bottom: 38px;
-    left: -18px;
-
-    .range-controls__bar {
-      position: relative;
-      width: 240px;
-      height: 2px;
-      background-color: #000000;
-    }
-
-    .range-controls__btn {
-      position: absolute;
-      top: 50%;
-      left: 80%;
-      transform: translateY(-50%);
-      width: 15px;
-      height: 15px;
-
-      background-color: @cream;
-      border: 2px solid @lipstick;
-      border-radius: 50%;
-
-      &:active {
-        background-color: @lipstick;
-      }
-    }
-  }
 }
 
-.share__option:not(.share__option--active) {
-  .share__option-name {
-    .share__option-icon {
-      fill: @gray-blue;
-      opacity: 0.3;
-    }
+.share__label {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 35px;
+  font-size: 0;
+
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  fill: @editor-icon;
+
+  &--active {
+    fill: @lipstick;
   }
 
   &:hover {
-    .share__option-icon {
-      fill: @gray-blue;
-      opacity: 0.5;
-    }
-  }
-
-  &:active {
-    .share__option-icon {
-      fill: @lipstick;
-      opacity: 1;
-    }
-  }
-
-  .share__control {
-    display: none;
-  }
-}
-
-.share__option-name {
-  text-align: center;
-  vertical-align: middle;
-
-  .share__option-icon--active {
     fill: @lipstick;
   }
+
+  &:not(&--active):active {
+    fill: @editor-icon--active;
+  }
 }
 
-.share__button-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
+.share__range {
+  appearance: none;
+  position: absolute;
+  left: -15px;
+  bottom: -38px;
+  width: 240px;
+  height: 2px;
+  background-color: #000000;
 
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  &:not(&--active) {
+    display: none;
+  }
+
+  &::-webkit-slider-thumb {
+    appearance: none;
+    position: absolute;
+    width: 14px;
+    height: 15px;
+    top: 50%;
+    left: 80%;
+    transform: translateY(-50%);
+
+    background-color: @cream;
+    border: 2px solid @lipstick;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  &::-webkit-slider-thumb:hover {
+    background-color: @lipstick;
+  }
 }
 
 .share__button--post {
@@ -206,106 +193,105 @@
     margin-right: 20px;
   }
 
-  .share__options-list {
+  .share__fieldset {
+    width: 300px;
+  }
+
+  .share__inputs {
+    width: 275px;
+    margin: 0 auto;
+    margin-top: -19px;
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
     justify-content: flex-start;
-
-    width: 275px;
-    .list-style-none;
-    margin-top: -20px;
   }
 
-  .share__option {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  .share__label {
     width: 275px;
-    height: 72px;
-    padding: 0;
+    height: 73px;
+    margin: 0;
 
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid @editor-icon;
 
-    .share__option-name .share__option-icon {
-      width: 22px;
-      height: 22px;
-    }
-
-    .share__control {
-      position: absolute;
+    svg {
       top: 50%;
-      left: 56%;
+      left: -9px;
+      transform: translateY(-50%) scale(0.5);
+    }
 
-      transform: translateX(-50%);
+    &--contrast svg {
+      left: 0;
+    }
 
-      .range-controls__bar {
-        width: 200px;
-      }
+    fill: @editor-icon;
 
-      .range-controls__btn {
-        left: 73%;
-      }
+    &--active {
+      fill: @lipstick;
+    }
+
+    &:hover {
+      fill: @lipstick;
+    }
+
+    &:not(&--active):active {
+      fill: @editor-icon--active;
     }
   }
 
-  .share__option:not(.share__option--active) {
-    .share__control {
-      display: block;
+  .share__range {
+    left: 55px;
+    top: 50%;
+    width: 202px;
+    height: 2px;
+
+    transform: translateY(-50%);
+
+    &:not(&--active) {
+      display: inline-flex;
     }
 
-    &:nth-of-type(2) {
-      .share__option-icon {
-        width: 24px;
-        height: 22px;
+    &::-webkit-slider-thumb {
+      appearance: none;
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      top: 50%;
+      left: 73%;
+      transform: translateY(-50%);
 
-        fill: @lipstick;
-        opacity: 1;
-      }
-
-      .share__control {
-        .range-controls__btn {
-          left: 12%;
-        }
-      }
+      background-color: @cream;
+      border: 2px solid @lipstick;
+      border-radius: 50%;
+      cursor: pointer;
     }
 
-    &:nth-of-type(3) {
-      .share__option-icon {
-        width: 16px;
-        height: 16px;
+    &--fill::-webkit-slider-thumb {
+      left: 12%;
+    }
 
-        fill: @lipstick;
-        opacity: 1;
-      }
+    &--contrast::-webkit-slider-thumb {
+      left: 48%;
+    }
 
-      .share__control {
-        .range-controls__btn {
-          left: 49%;
-        }
-      }
+    &::-webkit-slider-thumb:hover {
+      background-color: @lipstick;
     }
   }
 
-  .share__option-name {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 30px;
-  }
-
-  .share__button-wrapper {
-    justify-content: space-between;
-
+  .share__btns {
     width: 300px;
-    height: 135px;
+    margin-top: 64px;
+  }
 
-    border-top: none;
+  .share__btns-in {
+    width: 260px;
+    margin: 0 auto;
   }
 
   .share__button {
     width: 260px;
+    margin-bottom: 25px;
 
     &--post {
       margin-top: 0;
@@ -340,73 +326,66 @@
     margin: 0 90px 0 0;
   }
 
-  .share__options-list {
-    width: 100%;
+  .share__fieldset {
+    width: 410px;
   }
 
-  .share__option {
+  .share__inputs {
+    width: 410px;
+  }
+
+  .share__label {
     width: 410px;
 
-    .share__option-name .share__option-icon {
-      width: 44px;
-      height: 44px;
+    svg {
+      top: 50%;
+      left: -3px;
+      transform: translateY(-50%) scale(1);
     }
 
-    .share__control {
-      left: 58%;
+    &--contrast svg {
+      left: 5px;
+    }
 
-      .range-controls__bar {
-        width: 288px;
-      }
-
-      .range-controls__btn {
-        left: 25%;
-      }
+    &--fill svg {
+      left: 2px;
     }
   }
 
-  .share__option:not(.share__option--active) {
-    .share__control {
-      display: block;
+  .share__range {
+    left: 92px;
+    width: 289px;
+
+    &::-webkit-slider-thumb {
+      top: 50%;
+      left: 25%;
+      transform: translateY(-50%);
+
+      background-color: @cream;
+      border: 2px solid @lipstick;
+      border-radius: 50%;
+      cursor: pointer;
     }
 
-    &:nth-of-type(2) {
-      .share__option-icon {
-        width: 48px;
-        height: 43px;
-      }
-
-      .share__control {
-        .range-controls__btn {
-          left: 86%;
-        }
-      }
+    &--fill::-webkit-slider-thumb {
+      left: 85%;
     }
 
-    &:nth-of-type(3) {
-      .share__option-icon {
-        width: 32px;
-        height: 32px;
-      }
-
-      .share__control {
-        .range-controls__btn {
-          left: 56%;
-        }
-      }
+    &--contrast::-webkit-slider-thumb {
+      left: 55%;
     }
   }
 
-  .share__option-name {
-    width: 50px;
+  .share__btns {
+    width: 410px;
+    margin-top: 132px;
   }
 
-  .share__button-wrapper {
+  .share__btns-in {
+    display: flex;
     flex-direction: row;
-    justify-content: flex-start;
     align-items: baseline;
     width: 410px;
-    height: auto;
   }
 
   .share__button {
@@ -416,7 +395,7 @@
     line-height: 18px;
 
     &--post {
-      margin-right: 45px;
+      margin-right: auto;
     }
   }
 }
