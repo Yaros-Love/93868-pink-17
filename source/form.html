@@ -4,6 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Пинк</title>
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
   <link href="css/style.min.css" rel="stylesheet">
 </head>
   <body class="inner">
@@ -27,7 +30,7 @@
         </div>
         <nav class="main-nav main-nav--nojs">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
-            <svg class="close" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50" height="24" viewBox="0 0 49.945 24.007" enable-background="new 0 0 49.945 24.007" xml:space="preserve">
+            <svg class="close" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50" height="24" viewBox="0 0 49.945 24.007" enable-background="new 0 0 49.945 24.007" xml:space="preserve">
               <use xlink:href="#burger-menu"></use>
             </svg>
             <svg class="open" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
@@ -128,11 +131,11 @@
               <ul class="contacts-field__list">
                 <li class="contacts-field__item contacts-field__item--phone">
                   <label for="user-tel">Номер телефона</label>
-                  <input class="contacts-field__input contacts-field__input--phone" type="text" name="user-tel" id="user-tel" placeholder="Номер, пожалуйста">
+                  <input class="contacts-field__input contacts-field__input--phone" type="tel" name="user-tel" id="user-tel" placeholder="Номер, пожалуйста">
                 </li>
                 <li class="contacts-field__item contacts-field__item--mail">
                   <label for="user-email">Адрес почты</label>
-                  <input class="contacts-field__input contacts-field__input--mail" type="text" name="user-email" id="user-email" placeholder="Введите почту *" required="">
+                  <input class="contacts-field__input contacts-field__input--mail" type="email" name="user-email" id="user-email" placeholder="Введите почту *" required="">
                 </li>
               </ul>
             </fieldset>
@@ -212,7 +215,7 @@
         </ul>
         <div class="copyright">
           <span class="copyright__text">Разработано</span>
-          <a class="copyright__link" href="https://up.htmlacademy.ru/adaptive/17">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <svg width="27" height="34px">
               <use xlink:href="#icon-academy"></use>
             </svg>
