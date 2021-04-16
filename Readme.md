@@ -1,8 +1,5 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Nastya Zelenenkaya](https://up.htmlacademy.ru/adaptive/17/user/93868).
-* Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
-
 ---
 
 **Обратите внимание, что папка с вашими исходными файлами — `source/`.**
